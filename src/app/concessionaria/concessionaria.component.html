@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-sm-5">
+    <button type="button" class="btn btn-primary btn-block"
+    (click)="onNuovoClick()"
+    >Nuovo</button>
+    <br>
+    <div class="list-group">
+      <div *ngFor="let auto of concessionaria; let i = index">
+        <button type="button" class="list-group-item list-group-item-action active"
+        *ngIf="auto.marca != ''"
+        [ngClass]="{'active': corrente == i}"
+        (click)="onAutoClick(i)"
+        >
+          {{auto.getAutoCompleta()}}
+        </button>
+      </div>
+    </div>
+    <br>
+    <hr>
+  </div>
+<div class="col-sm-7">
+  <app-auto [auto]="concessionaria[corrente]"></app-auto>
+</div>
+</div>

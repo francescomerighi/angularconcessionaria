@@ -1,0 +1,23 @@
+<p class="lead">
+  {{auto.getAutoCompleta()}}
+</p>
+<div class="form-group">
+  <label>Marca</label>
+  <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="es. Audi" [(ngModel)]="auto.marca">
+</div>
+<div class="form-group">
+  <label>Modello</label>
+  <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="es. A3" [(ngModel)]="auto.modello">
+</div>
+<div class="form-group">
+  <label>Targa</label>
+  <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="XX XXXXX" [(ngModel)]="auto.targa">
+</div>
+<div class="form-group">
+  <label>Colore</label>
+  <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Inserire colore auto" [(ngModel)]="auto.colore">
+</div>
+<div class="form-group">
+  <label>Anno di immatricolazione</label>
+  <input type="number" class="form-control" aria-describedby="emailHelp" placeholder="nnnn" [(ngModel)]="auto.annoUscita">
+</div>
